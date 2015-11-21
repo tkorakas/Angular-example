@@ -1,0 +1,5 @@
+<div ng-repeat="post in posts">
+  <a href="#/post/{{post.nid[0].value}}"><h1>{{post.title[0].value}}</h1></a>
+  <img ng-src="{{post.field_image[0].url}}" alt="">
+  <p ng-bind-html="post.body[0].value"></p>
+</div>

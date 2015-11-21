@@ -1,0 +1,8 @@
+<h1>
+  {{post.title[0].value}}
+</h1>
+<div class="text-right">{{post.created[0].value * 1000 | date:'HH:mm:ss dd-MM-yyyy' }}</div>
+
+<hr>
+<img ng-src="{{post.field_image[0].url}}" alt="">
+<div>{{post.body[0].value}}</div>
